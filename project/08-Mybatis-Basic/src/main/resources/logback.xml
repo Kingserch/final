@@ -1,0 +1,25 @@
+<configuration scan="true" scanPeriod="60 second" debug="true">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+<!--
+    <logger name="org.mybatis.example.dao.EmployMapper" level="DEBUG" />
+    <logger name="org.mybatis.example.dao " level="DEBUG" />
+-->
+    <!--
+    置打印级别，所以继承他的上级<root>的日志级别“DEBUG”；
+    没有设置addtivity，默认为true，将此loger的打印信息向上级传递；
+    没有设置appender，此loger本身不打印任何信息。
+    -->
+    <logger name="org.mybatis.example.logback" level="DEBUG" addtivity="true">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+    <logger name="org.mybatis.example.dao" level="DEBUG" />
+
+    <!--日志输出级别:#ALL < DEBUG < INFO < WARN < ERROR < FATAL < OFF-->
+<!--    <root level="WARN">
+        <appender-ref ref="STDOUT"/>
+    </root>-->
+</configuration>

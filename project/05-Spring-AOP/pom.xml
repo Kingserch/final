@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>KaKaLuoTe</artifactId>
+        <groupId>com.jxufe.demo</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>05-Spring-AOP</artifactId>
+
+    <dependencies>
+
+        <!--spring核心依赖-->
+        <!--第一种方案开始begin-->
+        <!-- <dependency>
+             <groupId>commons-logging</groupId>
+             <artifactId>commons-logging</artifactId>
+             <version>${commongs.logging}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.springframework</groupId>
+             <artifactId>spring-core</artifactId>
+             <version>${spring.version}</version>
+             <exclusions>
+                 <exclusion>
+                     <groupId>commons-logging</groupId>
+                     <artifactId>commons-logging</artifactId>
+                 </exclusion>
+             </exclusions>
+         </dependency>
+         <dependency>
+             <groupId>org.springframework</groupId>
+             <artifactId>spring-beans</artifactId>
+             <version>${spring.version}</version>
+             <exclusions>
+                 <exclusion>
+                     <groupId>org.springframework</groupId>
+                     <artifactId>spring-core</artifactId>
+                 </exclusion>
+             </exclusions>
+         </dependency>
+
+         <dependency>
+             <groupId>org.springframework</groupId>
+             <artifactId>spring-expression</artifactId>
+             <version>${spring.version}</version>
+             <exclusions>
+                 <exclusion>
+                     <groupId>org.springframework</groupId>
+                     <artifactId>spring-core</artifactId>
+                 </exclusion>
+             </exclusions>
+         </dependency>
+         <dependency>
+             <groupId>org.springframework</groupId>
+             <artifactId>spring-aop</artifactId>
+             <version>${spring.version}</version>
+             <exclusions>
+                 <exclusion>
+                     <groupId>org.springframework</groupId>
+                     <artifactId>spring-beans</artifactId>
+                 </exclusion>
+                 <exclusion>
+                     <groupId>org.springframework</groupId>
+                     <artifactId>spring-core</artifactId>
+                 </exclusion>
+             </exclusions>
+         </dependency>
+
+         <dependency>
+             <groupId>org.springframework</groupId>
+             <artifactId>spring-context</artifactId>
+             <version>${spring.version}</version>
+             <exclusions>
+                 <exclusion>
+                     <groupId>org.springframework</groupId>
+                     <artifactId>spring-core</artifactId>
+                 </exclusion>
+                 <exclusion>
+                     <groupId>org.springframework</groupId>
+                     <artifactId>spring-aop</artifactId>
+                 </exclusion>
+                 <exclusion>
+                     <groupId>org.springframework</groupId>
+                     <artifactId>spring-beans</artifactId>
+                 </exclusion>
+                 <exclusion>
+                     <groupId>org.springframework</groupId>
+                     <artifactId>spring-expression</artifactId>
+                 </exclusion>
+             </exclusions>
+         </dependency>
+ -->
+        <!--第一种方案开始begin-->
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
+
+        <!--  <dependency>
+              <groupId>com.ylzinfo</groupId>
+              <artifactId>eva-esb</artifactId>
+              <version>3.0.2-SNAPSHOT</version>
+          </dependency>
+          <dependency>
+              <groupId>com.ylzinfo</groupId>
+              <artifactId>eva-portal-ssoClient</artifactId>
+              <version>3.0.2-SNAPSHOT</version>
+          </dependency>
+          <dependency>
+              <groupId>com.ylzinfo</groupId>
+              <artifactId>eva-portal-api</artifactId>
+              <version>3.0.2-SNAPSHOT</version>
+          </dependency>
+          <dependency>
+              <groupId>com.ylzinfo</groupId>
+              <artifactId>eva-portal-log-api</artifactId>
+              <version>3.0.2-SNAPSHOT</version>
+          </dependency>
+          <dependency>
+              <groupId>com.ylzinfo</groupId>
+              <artifactId>eva-portal-log-db</artifactId>
+              <version>3.0.2-SNAPSHOT</version>
+          </dependency>
+          <dependency>
+              <groupId>com.ylzinfo</groupId>
+              <artifactId>eva-esb</artifactId>
+              <version>3.0.2-SNAPSHOT</version>
+          </dependency>
+          <dependency>
+              <groupId>com.ylzinfo</groupId>
+              <artifactId>eva-portal-log-mongodb</artifactId>
+              <version>3.0.2-SNAPSHOT</version>
+          </dependency>-->
+    </dependencies>
+
+    <repositories>
+ <!--       <repository>
+            <id>ylzinfo-public</id>
+            <name>易联众公共库</name>
+            <url>http://192.168.22.97:8081/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+-->    </repositories>
+
+
+</project>
